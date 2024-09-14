@@ -1,0 +1,108 @@
+
+#titr{
+    font-family: sans-serif;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+#input{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+#button{
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#containerTag{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 14px;
+}
+#divTag{
+    background-color: rgb(214, 0, 175);
+    padding: 10px 0 20px;
+    border-radius: 20px;
+    width: 350px;
+    margin: 12px 10px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 1px 1px 6px 2px lightgrey;
+    font-family: sans-serif;
+    text-align: center;
+}
+#titleTag{
+    color: white;
+    margin: 0;
+    font-size: 40px;
+}
+#subtitleTag{
+    color: white;
+    margin: 0;
+}
+#name{
+    background-color: white;
+    margin: 10px 0;
+    font-size: 50px;
+    height: 90px;
+    font-family:sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : rgb(105, 9, 92)
+}
+.deleteTag{
+    position: absolute;
+    padding: 5px 8px;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.deleteTag:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    #titr{
+        padding-top: 10px;
+        font-size: 26px;
+    }
+    #containerTag{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #divTag{
+        width: 94%;
+    }
+    .container{
+        width: 98%;
+        gap: 4px;
+    }
+    #input{
+        font-size: 12px;
+    }
+    #button{
+        font-size: 12px;
+    }
+    #titleTag{
+        color: white;
+        margin: 0;
+        font-size: 34px;
+    }
+    #subtitleTag{
+        color: white;
+        margin: 0;
+    }
+    #name{
+        margin: 10px 0;
+        font-size: 40px;
+        height: 70px;
+    }
+}
